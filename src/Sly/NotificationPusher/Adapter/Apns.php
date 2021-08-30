@@ -217,6 +217,7 @@ class Apns extends BaseAdapter implements FeedbackAdapterInterface
 
         $serviceMessage = new ServiceMessage();
         $serviceMessage->setId(sha1($device->getToken() . $message->getText()));
+        $serviceMessage->setBundleId($this->getParameter('bundleId'));
         $serviceMessage->setAlert($alert);
         $serviceMessage->setToken($device->getToken());
         if (false !== $badge) {
@@ -280,6 +281,6 @@ class Apns extends BaseAdapter implements FeedbackAdapterInterface
      */
     public function getRequiredParameters()
     {
-        return ['certificate'];
+        return ['certificate', 'bundleId'];
     }
 }
