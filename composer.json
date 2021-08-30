@@ -31,7 +31,7 @@
         "symfony/options-resolver": ">=2.3,<5",
         "symfony/console": ">=2.3,<6",
         "symfony/process": ">=2.3,<5",
-        "zendframework/zendservice-apple-apns": "~1.4",
+        "ohdonpiano/zendservice-apple-apns": "~1.4",
         "zendframework/zendservice-google-gcm": "~2.1",
         "zendframework/zend-validator": "^2.12",
         "doctrine/inflector": "~1.1",
